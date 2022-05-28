@@ -16,5 +16,10 @@ jobs:
         name: Checkout 
         uses: actions/checkout@v3
       -
+        name: python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      -
         name: build osx
         run: python build-locally.py osx_64_numpy1.21python3.10.____cpython
